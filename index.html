@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Альянс Експерт</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/img/logo1.gif" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/stylehtml.css">
+    <script type="module" src="./assets/js/html.js"></script>
+</head>
+<body>
+  <div class="container-main">
+    <div class="container pt-3 min-vh-100 d-flex flex-column bg-white p-0">
+      <!-- Navbar -->
+      <div style="position: sticky; top: 0; z-index: 1000;">
+        <div class="nav-bar bg-transparent container-fluid">
+          <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
+            <a href="/" class="navbar-brand d-flex align-items-center text-center">
+              <div class="icon p-2 me-2">
+                <img class="logo" src="/assets//img/logo1.gif" alt="Icon">
+              </div>
+              <h1 class="m-0 fw-bold main-text">Альянс Експерт</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto text-center">
+              <div class="nav-item dropdown item-main">
+                <a href="/" class="nav-link fw-bold">Головна</a>
+              </div>
+              <div class="nav-item dropdown">
+                <a href="#about" class="nav-link">Про нас</a>
+              </div>
+              <div class="nav-item dropdown">
+                <a href="#property" class="nav-link">Наші варіанти</a>
+              </div>
+              <div class="nav-item dropdown">
+                <a href="#contact" class="nav-link">Контакти</a>
+              </div>
+              <div class="nav-item dropdown">
+                <a href="#team" class="nav-link">Наші фахівці</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+        <!-- Navbar end-->
+
+        <!-- Header -->
+      <div class="container-fluid header bg-white p-0" >
+        <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
+          <div class="col-md-6 p-5 mt-lg-5">
+            <h1 class="display-5 animated fadeIn mb-4 mt-2 fw-bold">Шукайте <span class="text-header">ідеальне житло </span> своєї мрії</h1>
+            <p class="animated fadeIn mb-5 pb-2 opacity-75">Наші професіонали допоможуть Вам у будь-якому питанні!</p>
+            <a href="https://t.me/alianceexpert" class="btn-header py-4 px-5 me-3 animated fadeIn text-light">Наш телеграм канал</a>
+          </div>
+          <div class="col-md-6 animated fadeIn carousel-container">
+            <!-- Carousel -->
+            <div class="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/assets/img/carousel-1.gif" class="carousel-img d-block w-100" alt="First Image" style="object-fit: cover; opacity: 1; transition: opacity 1s;">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/carousel-2.jpg" class="carousel-img d-block w-100" alt="Second Image" style="object-fit: cover; opacity: 1; transition: opacity 1s;">
+                </div>
+              </div>
+              <button class="carousel-control-prev btn-carousel" id="prevButton">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next btn-carousel" id="nextButton">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <!-- Carousel -->   
+          </div>
+        </div>
+      </div>
+        <!-- Header end-->
+      <main class="row flex-grow-1 mt-3">
+      <!-- Search -->
+        <div class="container-search mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px;">
+          <div class="container">
+            <div class="row g-2">
+              <div class="col-md-10">
+                <div class="row g-2">
+                  <div class="col-md-5">
+                    <select v-model="selectedService" class="form-select m-auto border-0 py-3">
+                      <option value="" selected>Тип послуги</option>
+                      <option value="rentApartments">Оренда квартир</option>
+                      <option value="sellApartments">Купівля квартири</option>
+                      <option value="rentHouses">Оренда будинка</option>
+                      <option value="sellHouses">Купівля будинка</option>
+                      <option value="landPlots">Земельні ділянки</option>
+                      <option value="offices">Офіси</option>
+                    </select>
+                  </div>
+                  <div class="col-md-5">
+                    <select class="form-select m-auto border-0 py-3">
+                      <option selected>Місцезнаходження</option>
+                      <option value="Dnipro">Дніпро</option>
+                      <!-- Добавьте другие опции здесь -->
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 mt-2">
+                <button @click="search" class="btn-search border-0 w-100 py-3">Знайти</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Search end-->
+        <!-- About -->
+        <div id="about" class="container-xxl py-5 ">
+          <div class="container">
+            <div class="row g-5 align-items-center">
+              <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <div class="about-img position-relative overflow-hidden p-5 pe-0">
+                    <img class="img-fluid w-100" src="/assets/img/about.jpg">
+                </div>
+              </div>
+              <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <h1 class="mb-5">Підберемо для Вас ідеальний варіант</h1>
+                <p class="mb-5">Наші фахівці приймають до уваги всі деталі Вашого запросу, щоб допомогти Вам</p>
+                <div class="mb-5">
+                    <p><i class="fa fa-check text-primary me-3"></i>Великий вибір пропозицій</p>
+                    <p><i class="fa fa-check text-primary me-3"></i>Профейсійні фахівці</p>
+                    <p><i class="fa fa-check text-primary me-3"></i>Честність та бажання допомогти</p>
+                </div>
+                <a class="btn-about text-light py-4 px-5" href="https://t.me/alianceexpert">Наш телеграм канал</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- About end-->
+        <!-- Лучшие варианты Start -->
+        <div class="container-xxl py-5">
+          <div class="container">
+            <div class="row g-0 gx-5 align-items-center">
+              <div>
+                <div class="text-center mx-auto mb-5 wow slideInLeft" data-wow-delay="0.1s">
+                  <h1 class="mb-3">Наші найкращі варіанти</h1>
+                  <p>Оберіть варіант, який вам сподобався та зв'яжіться з нашими фахівцями</p>
+                </div>
+              </div>
+            </div>
+            <div class="row g-4">
+              <div id="property" class="col-lg-4 col-md-6 wow fadeInUp mb-3" data-wow-delay="0.1s">
+                <div class="property-item rounded overflow-hidden">
+                  <div class="position-relative overflow-hidden">
+                    <div id="carouselExample" class="carousel slide">
+                      <div class="carousel-inner">
+                        <img class="img-fluid" src="/assets/img/лучшиеварианты/apartament1.jpg" alt="First">
+                        <img class="img-fluid" src="/assets/img/лучшиеварианты/apartment2.jpg" alt="Second">
+                        <div class="type rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Оренда</div>
+                        <div class="bg-white rounded-top text position-absolute start-0 bottom-0 mx-4 pt-1 px-3 fw-semibold">Квартира</div>
+                      </div>
+                      <button class="carousel-control-prev btn-best" type="button" @click="prevSlide">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next btn-best" type="button" @click="nextSlide">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="p-4 pb-0" style="height: 170px;">
+                    <h5 class="text mb-3">300$</h5>
+                    <a class="d-block h5 mb-2" href="">Квартира у центрі Дніпра з мальовничим видом на центр города</a>
+                    <p><i class="fa fa-map-marker-alt text me-2"></i>Дніпро</p>
+                  </div>
+                  <div class="d-flex border-top">
+                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text me-2"></i>45м²</small>
+                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text me-2"></i>3</small>
+                    <small class="flex-fill text-center py-2"><i class="fa fa-bath text me-2"></i>2</small>
+                  </div>
+                </div>
+              </div>
+            </div>   
+          </div>
+        </div>
+        <!-- Лучшие варианты End -->
+
+      </main>
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+    
+</body>
+</html>
