@@ -97,3 +97,63 @@ document.addEventListener('DOMContentLoaded', () => {
 // search
 
 
+
+const customCarousels = document.querySelectorAll('.custom-carousel');
+
+// Добавляем обработчики событий для всех найденных каруселей
+customCarousels.forEach(customCarousel => {
+  // Находим элементы карусели
+  const customPrevButton = customCarousel.querySelector('[data-carousel-control="prev"]');
+  const customNextButton = customCarousel.querySelector('[data-carousel-control="next"]');
+  const customItems = customCarousel.querySelectorAll('.custom-carousel-item');
+  let customIndex = 0;
+
+  // Добавляем обработчики событий для кнопок Previous и Next
+  customPrevButton.addEventListener('click', () => {
+    customIndex = (customIndex - 1 + customItems.length) % customItems.length;
+    showCustomSlide(customIndex, customItems);
+  });
+
+  customNextButton.addEventListener('click', () => {
+    customIndex = (customIndex + 1) % customItems.length;
+    showCustomSlide(customIndex, customItems);
+  });
+
+  // Сразу показываем первый слайд
+  showCustomSlide(customIndex, customItems);
+
+  // Функция для показа слайда
+  function showCustomSlide(index, items) {
+    items.forEach(item => {
+      item.classList.remove('active');
+    });
+    items[index].classList.add('active');
+  }
+});
+
+
+
+// отзывы
+document.addEventListener('DOMContentLoaded', () => {
+  const customPrevButton = document.getElementById('customPrevButton');
+  const customNextButton = document.getElementById('customNextButton');
+  const carouselItems = document.querySelectorAll('.carousel-item-reviews');
+  let currentIndexReviews = 0;
+
+  customPrevButton.addEventListener('click', () => {
+    currentIndexReviews = (currentIndexReviews - 1 + carouselItems.length) % carouselItems.length;
+    showSlide(currentIndexReviews);
+  });
+
+  customNextButton.addEventListener('click', () => {
+    currentIndexReviews = (currentIndexReviews + 1) % carouselItems.length;
+    showSlide(currentIndexReviews);
+  });
+
+  function showSlide(index) {
+    const offset = -(index * 105) + '%'; // Для десктопной версии
+    carouselItems.forEach(item => {
+      item.style.transform = `translateX(${offset})`;
+    });
+  }
+});

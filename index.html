@@ -22,7 +22,7 @@
         <div class="nav-bar bg-transparent container-fluid">
           <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
             <a href="/" class="navbar-brand d-flex align-items-center text-center">
-              <div class="icon p-2 me-2">
+              <div class="p-2 me-2">
                 <img class="logo" src="/assets//img/logo1.gif" alt="Icon">
               </div>
               <h1 class="m-0 fw-bold main-text">Альянс Експерт</h1>
@@ -143,33 +143,50 @@
           </div>
         </div>
         <!-- About end-->
+
         <!-- Лучшие варианты Start -->
         <div class="container-xxl py-5">
           <div class="container">
             <div class="row g-0 gx-5 align-items-center">
               <div>
                 <div class="text-center mx-auto mb-5 wow slideInLeft" data-wow-delay="0.1s">
-                  <h1 class="mb-3">Наші найкращі варіанти</h1>
+                  <h1 id="property" class="mb-3">Наші найкращі варіанти</h1>
                   <p>Оберіть варіант, який вам сподобався та зв'яжіться з нашими фахівцями</p>
                 </div>
               </div>
             </div>
             <div class="row g-4">
-              <div id="property" class="col-lg-4 col-md-6 wow fadeInUp mb-3" data-wow-delay="0.1s">
-                <div class="property-item rounded overflow-hidden">
+              <!-- Первый вариант -->
+              <div class="col-lg-4 col-md-6 wow fadeInUp mb-3" data-wow-delay="0.1s">
+                <div class="custom-property-item rounded overflow-hidden">
                   <div class="position-relative overflow-hidden">
-                    <div id="carouselExample" class="carousel slide">
-                      <div class="carousel-inner">
-                        <img class="img-fluid" src="/assets/img/лучшиеварианты/apartament1.jpg" alt="First">
-                        <img class="img-fluid" src="/assets/img/лучшиеварианты/apartment2.jpg" alt="Second">
-                        <div class="type rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Оренда</div>
-                        <div class="bg-white rounded-top text position-absolute start-0 bottom-0 mx-4 pt-1 px-3 fw-semibold">Квартира</div>
+                    <div class="custom-carousel" data-carousel-id="1">
+                      <div class="custom-carousel-inner" data-carousel-inner-id="1">
+                        <!-- фото 1 -->
+                        <div class="custom-carousel-item active">
+                          <img class="img-fluid" style="height: 278px; width: 100%;" src="/assets/img/лучшиеварианты/apartament1.jpg" alt="First">
+                          <div class="type rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Оренда</div>
+                          <div class="bg-white rounded-top text position-absolute start-0 bottom-0 mx-4 pt-1 px-3 fw-semibold">Квартира</div>
+                        </div>
+                        <!-- фото 2 -->
+                        <div class="custom-carousel-item">
+                          <img class="img-fluid" style="height: 278px; width: 100%;" src="/assets/img/лучшиеварианты/apartment2.jpg" alt="Second">
+                          <div class="type rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Оренда</div>
+                          <div class="bg-white rounded-top text position-absolute start-0 bottom-0 mx-4 pt-1 px-3 fw-semibold">Квартира</div>
+                        </div>
+                        <!-- фото 3 -->
+                        <div class="custom-carousel-item">
+                          <img class="img-fluid" style="height: 278px; width: 100%;" src="/assets/img/лучшиеварианты/apartment3.jpg" alt="Third">
+                          <div class="type rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Оренда</div>
+                          <div class="bg-white rounded-top text position-absolute start-0 bottom-0 mx-4 pt-1 px-3 fw-semibold">Квартира</div>
+                        </div>
+
                       </div>
-                      <button class="carousel-control-prev btn-best" type="button" @click="prevSlide">
+                      <button class="carousel-control-prev btn-best" type="button" data-carousel-control="prev" data-carousel-target="1">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                       </button>
-                      <button class="carousel-control-next btn-best" type="button" @click="nextSlide">
+                      <button class="carousel-control-next btn-best" type="button" data-carousel-control="next" data-carousel-target="1">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                       </button>
@@ -177,7 +194,7 @@
                   </div>
                   <div class="p-4 pb-0" style="height: 170px;">
                     <h5 class="text mb-3">300$</h5>
-                    <a class="d-block h5 mb-2" href="">Квартира у центрі Дніпра з мальовничим видом на центр города</a>
+                    <p class="d-block h5 mb-2">Квартира у центрі Дніпра з мальовничим видом на центр города</p>
                     <p><i class="fa fa-map-marker-alt text me-2"></i>Дніпро</p>
                   </div>
                   <div class="d-flex border-top">
@@ -187,10 +204,445 @@
                   </div>
                 </div>
               </div>
-            </div>   
+              <!-- Первый вариант конец-->
+              <!-- Второй вариант -->
+              <div class="col-lg-4 col-md-6 wow fadeInUp mb-3" data-wow-delay="0.1s">
+                <div class="custom-property-item rounded overflow-hidden">
+                  <div class="position-relative overflow-hidden">
+                    <div class="custom-carousel"  data-carousel-id="1">
+                      <div class="custom-carousel-inner" data-carousel-inner-id="1">
+                        <!-- фото 1 -->
+                        <div class="custom-carousel-item active">
+                          <img class="img-fluid" style="height: 278px; width: 100%;" src="/assets/img/лучшиеварианты/apartment2.jpg" alt="First">
+                          <div class="type rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Купівля</div>
+                          <div class="bg-white rounded-top text position-absolute start-0 bottom-0 mx-4 pt-1 px-3 fw-semibold">Будинок</div>
+                        </div>
+                        <!-- фото 2 -->
+                        <div class="custom-carousel-item">
+                          <img class="img-fluid" style="height: 278px; width: 100%;" src="/assets/img/лучшиеварианты/apartament1.jpg" alt="Second">
+                          <div class="type rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Купівля</div>
+                          <div class="bg-white rounded-top text position-absolute start-0 bottom-0 mx-4 pt-1 px-3 fw-semibold">Будинок</div>
+                        </div>
+                        <!-- фото 3 -->
+                        <div class="custom-carousel-item">
+                          <img class="img-fluid" style="height: 278px; width: 100%;" src="/assets/img/лучшиеварианты/apartment3.jpg" alt="Third">
+                          <div class="type rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Купівля</div>
+                          <div class="bg-white rounded-top text position-absolute start-0 bottom-0 mx-4 pt-1 px-3 fw-semibold">Будинок</div>
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev btn-best" type="button" data-carousel-control="prev" data-carousel-target="1">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next btn-best" type="button" data-carousel-control="next" data-carousel-target="1">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="p-4 pb-0" style="height: 170px;">
+                    <h5 class="text mb-3">31 000$</h5>
+                    <p class="d-block h5 mb-2">Будинок у центрі Дніпра з мальовничим видом на річку</p>
+                    <p><i class="fa fa-map-marker-alt text me-2"></i>Дніпро</p>
+                  </div>
+                  <div class="d-flex border-top">
+                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text me-2"></i>85м²</small>
+                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text me-2"></i>5</small>
+                    <small class="flex-fill text-center py-2"><i class="fa fa-bath text me-2"></i>2</small>
+                  </div>
+                </div>
+              </div>
+              <!-- Второй вариант конец-->
+              <!-- Третий вариант -->
+              <div class="col-lg-4 col-md-6 wow fadeInUp mb-3" data-wow-delay="0.1s">
+                <div class="custom-property-item rounded overflow-hidden">
+                  <div class="position-relative overflow-hidden">
+                    <div class="custom-carousel"  data-carousel-id="1">
+                      <div class="custom-carousel-inner" data-carousel-inner-id="1">
+                        <!-- фото 1 -->
+                        <div class="custom-carousel-item active">
+                          <img class="img-fluid" style="height: 278px; width: 100%;" src="/assets/img/лучшиеварианты/apartament1.jpg" alt="First">
+                          <div class="type rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Оренда</div>
+                          <div class="bg-white rounded-top text position-absolute start-0 bottom-0 mx-4 pt-1 px-3 fw-semibold">Квартира</div>
+                        </div>
+                        <!-- фото 2 -->
+                        <div class="custom-carousel-item">
+                          <img class="img-fluid" style="height: 278px; width: 100%;" src="/assets/img/лучшиеварианты/apartment2.jpg" alt="Second">
+                          <div class="type rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Оренда</div>
+                          <div class="bg-white rounded-top text position-absolute start-0 bottom-0 mx-4 pt-1 px-3 fw-semibold">Квартира</div>
+                        </div>
+                        <!-- фото 3 -->
+                        <div class="custom-carousel-item">
+                          <img class="img-fluid" style="height: 278px; width: 100%;" src="/assets/img/лучшиеварианты/apartment3.jpg" alt="Third">
+                          <div class="type rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Оренда</div>
+                          <div class="bg-white rounded-top text position-absolute start-0 bottom-0 mx-4 pt-1 px-3 fw-semibold">Квартира</div>
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev btn-best" type="button" data-carousel-control="prev" data-carousel-target="1">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next btn-best" type="button" data-carousel-control="next" data-carousel-target="1">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="p-4 pb-0" style="height: 170px;">
+                    <h5 class="text mb-3">300$</h5>
+                    <p class="d-block h5 mb-2">Квартира у центрі Дніпра з мальовничим видом на центр города</p>
+                    <p><i class="fa fa-map-marker-alt text me-2"></i>Дніпро</p>
+                  </div>
+                  <div class="d-flex border-top">
+                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text me-2"></i>45м²</small>
+                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text me-2"></i>3</small>
+                    <small class="flex-fill text-center py-2"><i class="fa fa-bath text me-2"></i>2</small>
+                  </div>
+                </div>
+              </div>
+              <!-- Третий вариант конец-->
+              <!-- Четвертый вариант -->
+              <div class="col-lg-4 col-md-6 wow fadeInUp mb-3" data-wow-delay="0.1s">
+                <div class="custom-property-item rounded overflow-hidden">
+                  <div class="position-relative overflow-hidden">
+                    <div class="custom-carousel"  data-carousel-id="1">
+                      <div class="custom-carousel-inner" data-carousel-inner-id="1">
+                        <!-- фото 1 -->
+                        <div class="custom-carousel-item active">
+                          <img class="img-fluid" style="height: 278px; width: 100%;" src="/assets/img/лучшиеварианты/apartament1.jpg" alt="First">
+                          <div class="type rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Оренда</div>
+                          <div class="bg-white rounded-top text position-absolute start-0 bottom-0 mx-4 pt-1 px-3 fw-semibold">Квартира</div>
+                        </div>
+                        <!-- фото 2 -->
+                        <div class="custom-carousel-item">
+                          <img class="img-fluid" style="height: 278px; width: 100%;" src="/assets/img/лучшиеварианты/apartment2.jpg" alt="Second">
+                          <div class="type rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Оренда</div>
+                          <div class="bg-white rounded-top text position-absolute start-0 bottom-0 mx-4 pt-1 px-3 fw-semibold">Квартира</div>
+                        </div>
+                        <!-- фото 3 -->
+                        <div class="custom-carousel-item">
+                          <img class="img-fluid" style="height: 278px; width: 100%;" src="/assets/img/лучшиеварианты/apartment3.jpg" alt="Third">
+                          <div class="type rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Оренда</div>
+                          <div class="bg-white rounded-top text position-absolute start-0 bottom-0 mx-4 pt-1 px-3 fw-semibold">Квартира</div>
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev btn-best" type="button" data-carousel-control="prev" data-carousel-target="1">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next btn-best" type="button" data-carousel-control="next" data-carousel-target="1">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="p-4 pb-0" style="height: 170px;">
+                    <h5 class="text mb-3">300$</h5>
+                    <p class="d-block h5 mb-2">Квартира у центрі Дніпра з мальовничим видом на центр города</p>
+                    <p><i class="fa fa-map-marker-alt text me-2"></i>Дніпро</p>
+                  </div>
+                  <div class="d-flex border-top">
+                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text me-2"></i>45м²</small>
+                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text me-2"></i>3</small>
+                    <small class="flex-fill text-center py-2"><i class="fa fa-bath text me-2"></i>2</small>
+                  </div>
+                </div>
+              </div>
+              <!-- Четвертый вариант конец-->
+              <!-- Пятый вариант -->
+              <div class="col-lg-4 col-md-6 wow fadeInUp mb-3" data-wow-delay="0.1s">
+                <div class="custom-property-item rounded overflow-hidden">
+                  <div class="position-relative overflow-hidden">
+                    <div class="custom-carousel"  data-carousel-id="1">
+                      <div class="custom-carousel-inner" data-carousel-inner-id="1">
+                        <!-- фото 1 -->
+                        <div class="custom-carousel-item active">
+                          <img class="img-fluid" style="height: 278px; width: 100%;" src="/assets/img/лучшиеварианты/apartment3.jpg" alt="First">
+                          <div class="type rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Оренда</div>
+                          <div class="bg-white rounded-top text position-absolute start-0 bottom-0 mx-4 pt-1 px-3 fw-semibold">Квартира</div>
+                        </div>
+                        <!-- фото 2 -->
+                        <div class="custom-carousel-item">
+                          <img class="img-fluid" style="height: 278px; width: 100%;" src="/assets/img/лучшиеварианты/apartment2.jpg" alt="Second">
+                          <div class="type rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Оренда</div>
+                          <div class="bg-white rounded-top text position-absolute start-0 bottom-0 mx-4 pt-1 px-3 fw-semibold">Квартира</div>
+                        </div>
+                        <!-- фото 3 -->
+                        <div class="custom-carousel-item">
+                          <img class="img-fluid" style="height: 278px; width: 100%;" src="/assets/img/лучшиеварианты/apartament1.jpg" alt="Third">
+                          <div class="type rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Оренда</div>
+                          <div class="bg-white rounded-top text position-absolute start-0 bottom-0 mx-4 pt-1 px-3 fw-semibold">Квартира</div>
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev btn-best" type="button" data-carousel-control="prev" data-carousel-target="1">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next btn-best" type="button" data-carousel-control="next" data-carousel-target="1">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="p-4 pb-0" style="height: 170px;">
+                    <h5 class="text mb-3">300$</h5>
+                    <p class="d-block h5 mb-2">Квартира у центрі Дніпра з мальовничим видом на центр города</p>
+                    <p><i class="fa fa-map-marker-alt text me-2"></i>Дніпро</p>
+                  </div>
+                  <div class="d-flex border-top">
+                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text me-2"></i>45м²</small>
+                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text me-2"></i>3</small>
+                    <small class="flex-fill text-center py-2"><i class="fa fa-bath text me-2"></i>2</small>
+                  </div>
+                </div>
+              </div>
+              <!-- Пятый вариант конец-->
+              <!-- Шестой вариант -->
+              <div class="col-lg-4 col-md-6 wow fadeInUp mb-3" data-wow-delay="0.1s">
+                <div class="custom-property-item rounded overflow-hidden">
+                  <div class="position-relative overflow-hidden">
+                    <div class="custom-carousel"  data-carousel-id="1">
+                      <div class="custom-carousel-inner" data-carousel-inner-id="1">
+                        <!-- фото 1 -->
+                        <div class="custom-carousel-item active">
+                          <img class="img-fluid" style="height: 278px; width: 100%;" src="/assets/img/лучшиеварианты/apartament1.jpg" alt="First">
+                          <div class="type rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Оренда</div>
+                          <div class="bg-white rounded-top text position-absolute start-0 bottom-0 mx-4 pt-1 px-3 fw-semibold">Квартира</div>
+                        </div>
+                        <!-- фото 2 -->
+                        <div class="custom-carousel-item">
+                          <img class="img-fluid" style="height: 278px; width: 100%;" src="/assets/img/лучшиеварианты/apartment2.jpg" alt="Second">
+                          <div class="type rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Оренда</div>
+                          <div class="bg-white rounded-top text position-absolute start-0 bottom-0 mx-4 pt-1 px-3 fw-semibold">Квартира</div>
+                        </div>
+                        <!-- фото 3 -->
+                        <div class="custom-carousel-item">
+                          <img class="img-fluid" style="height: 278px; width: 100%;" src="/assets/img/лучшиеварианты/apartment3.jpg" alt="Third">
+                          <div class="type rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Оренда</div>
+                          <div class="bg-white rounded-top text position-absolute start-0 bottom-0 mx-4 pt-1 px-3 fw-semibold">Квартира</div>
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev btn-best" type="button" data-carousel-control="prev" data-carousel-target="1">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next btn-best" type="button" data-carousel-control="next" data-carousel-target="1">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="p-4 pb-0" style="height: 170px;">
+                    <h5 class="text mb-3">300$</h5>
+                    <p class="d-block h5 mb-2">Квартира у центрі Дніпра з мальовничим видом на центр города</p>
+                    <p><i class="fa fa-map-marker-alt text me-2"></i>Дніпро</p>
+                  </div>
+                  <div class="d-flex border-top">
+                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text me-2"></i>45м²</small>
+                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text me-2"></i>3</small>
+                    <small class="flex-fill text-center py-2"><i class="fa fa-bath text me-2"></i>2</small>
+                  </div>
+                </div>
+              </div>
+              <!-- Шестой вариант конец-->
+            </div> 
           </div>
         </div>
         <!-- Лучшие варианты End -->
+        <!-- Категории -->
+        <div class="container-xxl py-5">
+          <div class="container">
+              <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                  <h1 class="mb-3">Тип Нерухомості</h1>
+                  <p>Оберіть пункт, який вас цікавить</p>
+              </div>
+              <div class="row g-4 category">
+                  <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                      <a href="rentApartments.html" class="cat-item d-block bg-light text-center rounded p-3">
+                          <div class="rounded p-4">
+                              <div class="icon mb-3">
+                                  <img class="img-fluid" src="/assets/img/icon/free-icon-building-1683841.png" alt="Icon">
+                              </div>
+                              <h6>Оренда квартири</h6>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                      <a href="sellApartments.html" class="cat-item d-block bg-light text-center rounded p-3">
+                          <div class="rounded p-4">
+                              <div class="icon mb-3">
+                                  <img class="img-fluid" src="/assets/img/icon/free-icon-building-188379.png" alt="Icon">
+                              </div>
+                              <h6>Купівля квартири</h6>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                      <a href="rentHouses.html" class="cat-item d-block bg-light text-center rounded p-3" >
+                          <div class="rounded p-4">
+                              <div class="icon mb-3">
+                                  <img class="img-fluid" src="/assets/img/icon/free-icon-building-767156.png" alt="Icon">
+                              </div>
+                              <h6>Оренда будинка</h6>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                      <a href="sellHouses.html" class="cat-item d-block bg-light text-center rounded p-3" >
+                          <div class="rounded p-4">
+                              <div class="icon mb-3">
+                                  <img class="img-fluid" src="/assets/img/icon/free-icon-buildings-2084040.png" alt="Icon">
+                              </div>
+                              <h6>Купівля будинка</h6>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                      <a href="landPlots.html" class="cat-item d-block bg-light text-center rounded p-3" >
+                          <div class="rounded p-4">
+                              <div class="icon mb-3">
+                                  <img class="img-fluid" src="/assets/img/icon/free-icon-bulding-3187308.png" alt="Icon">
+                              </div>
+                              <h6>Земельні ділянки</h6>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                      <a href="offices.html" class="cat-item d-block bg-light text-center rounded p-3" >
+                          <div class="rounded p-4">
+                              <div class="icon mb-3">
+                                  <img class="img-fluid" src="/assets/img/icon/free-icon-office-building-2974654.png" alt="Icon">
+                              </div>
+                              <h6>Офіси</h6>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+          </div>
+        </div>
+      <!-- Категории end-->
+      <!-- Action -->
+      <div id="contact" class="container-xxl py-5">
+        <div class="container">
+            <div class="bg-light rounded p-3">
+                <div class="bg-white rounded p-4" style="border: 1px dashed rgba(0, 185, 142, .3)">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                            <img class="img-fluid rounded w-100" src="/assets/img/getintouch.png" alt="">
+                        </div>
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="mb-4 text-center">
+                                <h1 class="mb-3">Зв'яжіться з нашими агентами за консультацією</h1>
+                                <p>Ми з радістю відповимо на всі ваші запитання</p>
+                            </div>
+                            <div class="d-flex justify-content-evenly">
+                                <a href="tel:+380999999999" class="btn-action py-3 px-4"><i class="fa fa-phone-alt me-2"></i>Подзвонити</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Action end-->
+    <!-- Reviews start -->
+    <div  class="container-xxl py-5">
+      <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+          <h1 class="mb-3 fw-semibold">Відгуки наших клієнтів</h1>
+          <p>Ми завжди радіємо Вашим відгукам!</p>
+        </div>
+        <!-- начало отзывов -->
+        <div class="testimonial-container">
+          <div class="testimonial-carousel"> 
+            <div id="carouselInner" class="carousel slide">
+              <div class="carousel-inner-reviews col-lg-12 col-sm-6" >
+                <!-- Отзыв 1 -->
+                <div class="carousel-item-reviews first-review">
+                  <div class="d-flex">
+                    <div class="col-md-6">
+                      <div class="testimonial-item-reviews rounded p-3">
+                        <div class="card rounded p-4 bg-light fixed-card-height ">
+                          <p class="flex-grow-1 review-text">Lorem ipsum dolor sit amet consectetur adipiscing elit diam, nam natoque phasellus maximus quis cras nunc habitant vivamus, hendrerit enim condimentum dictumst nisi cubilia tincidunt</p>
+                          <div class="d-flex align-items-center">
+                            <div class="ps-3">
+                              <h6 class="fw-cold mb-1">Имя 1</h6>
+                              <small>Услуга 1</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Отзыв 2 -->
+                <div class="carousel-item-reviews">
+                  <div class="d-flex">
+                    <div class="col-md-6">
+                      <div class="testimonial-item-reviews rounded p-3 ">
+                        <div class="card rounded p-4 bg-light fixed-card-height">
+                          <p class="flex-grow-1 review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut libero vel urna tincidunt condimentum. Donec vestibulum nisi sit amet est malesuada, in cursus tellus cursus. Sed ac mi nec lorem tempus laoreet.</p>
+                          <div class="d-flex align-items-center">
+                            <div class="ps-3">
+                              <h6 class="fw-cold mb-1">Имя 2</h6>
+                              <small>Услуга 2</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Отзыв 3 -->
+                <div class="carousel-item-reviews">
+                  <div class="d-flex">
+                    <div class="col-md-6">
+                      <div class="testimonial-item-reviews rounded p-3 ">
+                        <div class="card rounded p-4 bg-light fixed-card-height">
+                          <p class="flex-grow-1 review-text">Lorem ipsum dolor sit amet consectetur adipiscing elit facilisi habitasse, fames ex ut penatibus eu aenean est quisque, urna id velit malesuada tristique primis nam magna. Lorem ipsum dolor sit amet consectetur adipiscing elit diam, nam natoque phasellus maximus quis cras nun</p>
+                          <div class="d-flex align-items-center">
+                            <div class="ps-3">
+                              <h6 class="fw-cold mb-1">Имя 3</h6>
+                              <small>Услуга 3</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Отзыв 4 -->
+                <div class="carousel-item-reviews">
+                  <div class="d-flex">
+                    <div class="col-md-6">
+                      <div class="testimonial-item-reviews rounded p-3">
+                        <div class="card rounded p-4 bg-light fixed-card-height">
+                          <p class="flex-grow-1 review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut libero vel urna tincidunt condimentum. Donec vestibulum nisi sit amet est malesuada, in cursus tellus cursus. Sed ac mi nec lorem tempus laoreet.</p>
+                          <div class="d-flex align-items-center">
+                            <div class="ps-3">
+                              <h6 class="fw-cold mb-1">Имя 4</h6>
+                              <small>Услуга 4</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev custom-btn" type="button" data-bs-target="#carouselInner" data-bs-slide="prev" id="customPrevButton">
+              <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next custom-btn" type="button" data-bs-target="#carouselInner" data-bs-slide="next" id="customNextButton">
+              <span class="carousel-control-next-icon"></span>
+          </button>
+          </div>
+        </div>
+        <!-- конец отзывов -->
+      </div>
+    </div>
+    <!-- Reviews end -->
 
       </main>
 
