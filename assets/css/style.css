@@ -1,0 +1,207 @@
+
+
+.container-main {
+    background-color: rgb(190, 190, 223, 0.2);
+    font-family: 'Inter', sans-serif;
+}
+
+.type {
+    background-color: rgb(68, 68, 205);
+}
+
+.text {
+color: rgb(68, 68, 205);
+}
+
+.btn-carousel {
+background-color: rgb(68, 68, 205, 0.6);
+height: 50px;
+top: 50%;
+border-radius: 8px;
+}
+
+.btn-carousel:hover {
+background-color: rgb(68, 68, 205, 0.9);
+height: 50px;
+top: 50%;
+}
+
+.property-item {
+box-shadow: 0 0 30px rgba(0, 0, 0, .3);
+height: 500px;
+}
+
+.property-item img {
+transition: .5s;
+}
+
+.property-item:hover img {
+transform: scale(1.2);
+}
+
+.property-item .border-top {
+border-top: 1px dashed rgba(0, 185, 142, .3) !important;
+}
+
+.property-item .border-end {
+border-right: 1px dashed rgba(0, 185, 142, .3) !important;
+}
+
+a {
+text-decoration: none;
+}
+
+h1 {
+color: rgb(49, 49, 181);
+} 
+
+.btn-nav {
+padding-top: 3px;
+background-color: #fff;
+position: relative;
+text-decoration: none; 
+color: rgb(49, 49, 181, 0.8); 
+display: inline-block;
+vertical-align: middle;
+font-size: 20px;
+}
+
+.btn-nav:hover {
+color: rgb(49, 49, 181);
+}
+
+.btn-nav::before,
+.btn-nav::after {
+content: '';
+position: absolute;
+width: 0;
+height: 1px; 
+background-color:  rgb(49, 49, 181);
+opacity: 0;
+transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.btn-nav::before {
+top: calc(80% + 10px);
+    left: 0;
+    transform-origin: left center;
+}
+
+
+.btn-nav::after {
+bottom: calc(80% + 10px);
+    right: 0;
+    transform-origin: right center;
+
+}
+
+.btn-nav:hover::before, .btn-nav:hover::after {
+width: 100%;
+opacity: 1; /* Делаем линии видимыми при наведении */
+}
+
+.footer .btn.btn-social {
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 35px;
+    transition: .3s;
+}
+
+.footer .btn.btn-social:hover {
+    color: rgb(68, 68, 205);
+    border-color: rgb(68, 68, 205);
+}
+
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+    background-color: rgb(43, 43, 106);
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+
+.footer .copyright {
+    padding: 25px 0;
+    font-size: 15px;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.footer .footer-menu a {
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid rgba(255, 255, 255, .1);
+}
+
+.footer .footer-menu a:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+}
+
+.img-fluid {
+    height: 100px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.container-fluid {
+    background-color: rgb(43, 43, 106);
+}
+
+a {
+    text-decoration-line: none;
+}
+
+.load {
+background-color: rgb(68, 68, 205);
+color: white;
+height: 50px;
+top: 50%;
+}
+    
+.load:hover {
+background-color: rgb(68, 68, 205);
+height: 50px;
+top: 50%;
+}
+
+
+
+@media (max-width: 767px) {
+
+    .img-fluid {
+    height: 100px;
+    width: 150px;
+    object-fit: cover;
+    }
+
+    .btn-nav {
+    margin: auto;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+}

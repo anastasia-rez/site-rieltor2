@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Альянс Експерт</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/img/logo1.gif" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.29"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <div class="container-main">
+    <div class="container">
+      <header class="nav-bar bg-transparent container-fluid">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4 d-flex justify-content-between">
+          <a href="/" class="navbar-brand d-flex align-items-center text-center">
+            <div class="icon p-2 me-2">
+              <img class="img-fluid" src="/assets/img/logo1.gif" alt="Icon" style="width: 45px; height: auto;">
+            </div>
+            <h1 class="m-0 fw-bold">Альянс Експерт</h1>
+          </a>
+          <a href="/" class=" btn-nav fw-semibold nav-link"><i class="fa-solid fa-chevron-left pe-3"></i>Назад до головної</a>
+        </nav>
+      </header>
+
+      <div class="container-xxl py-4">
+        <div class="container ">
+          <div class="row g-0 gx-5 align-items-end">
+            <div>
+              <div class="text-center mx-auto mb-2 wow slideInLeft" data-wow-delay="0.1s">
+                <h1 class="mb-2 text fw-semibold">Оренда квартир</h1>
+                <p>Оберіть варіант, який вам сподобався та зв'яжіться з нашими фахівцями</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="row g-4 mt-2 " id="app">
+            <!-- карточки тут -->
+          </div>
+          <div id="noResultsMessage" class="text-center mt-3" style="display: none;">
+            <h3><i class="fa-solid fa-face-frown pe-3 fa-xs"></i>Вибачте, наразі варіантів нема. Але ми вже в пошуках найкращіх пропозицій!</h3>
+          </div>
+          <div class="text-center m-auto mt-3">
+            <button class="btn load m-auto fw-semibold" id="loadMoreButton">
+              <i class="fa-solid fa-spinner fa-spin fa-xl px-3"></i>Завантажити ще
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <footer class="text-center py-3">
+        <div  class="container-fluid text-white-50 footer pt-3 mt-5 wow fadeIn" data-wow-delay="0.1s">
+          <div class="container py-5">
+            <div class="row g-5 d-flex justify-content-evenly">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Про нас</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Дніпро, Україна</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+380 66 000 00 00</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>alianceexpert1@gmail.com</p>
+                      <a class="btn btn-link text-center text-white-50 p-1" href="/">Головна</a>
+                    <div class="d-flex pt-3 justify-content-evenly">
+                        <a class="btn btn-outline-light btn-social" href="https://instagram.com/aliansekspert?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr "><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-5 col-md-6">
+                    <h5 class="text-white mb-4">Галерея</h5>
+                    <div class="row g-2 pt-2">
+                        <div class="col-4">
+                            <img class="img-fluid rounded bg-light p-1 " src="/assets/img/лучшиеварианты/apartament1.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded bg-light p-1" src="/assets/img/лучшиеварианты/apartment2.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded bg-light p-1" src="/assets/img/лучшиеварианты/apartment3.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded bg-light p-1" src="/assets/img/лучшиеварианты/apartment4.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded bg-light p-1" src="/assets/img/carousel-1.gif" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded bg-light p-1" src="/assets/img/carousel-2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    const dataProperty = [
+      {
+        id: 1,
+        photos: [
+          '/assets/img/лучшиеварианты/apartament1.jpg',
+          '/assets/img/лучшиеварианты/apartment2.jpg',
+          '/assets/img/лучшиеварианты/apartment3.jpg',
+        ],
+        type: 'Оренда',
+        type2: 'Квартира',
+        price: '300$',
+        rooms: 3,
+        bathroom: 1,
+        area: '45м²',
+        location: 'Дніпро',
+        description: 'Квартира у центрі Дніпра з мальовничим видом на річку',
+        currentIndex: 0
+      },
+      {
+        id: 2,
+        photos: [
+          '/assets/img/лучшиеварианты/apartament1.jpg',
+          '/assets/img/лучшиеварианты/apartment2.jpg',
+          '/assets/img/лучшиеварианты/apartment3.jpg',
+        ],
+        type: 'Оренда',
+        type2: 'Квартира',
+        price: '500$',
+        rooms: 4,
+        bathroom: 2,
+        area: '55м²',
+        location: 'Дніпро',
+        description: 'Квартира у центрі Дніпра з мальовничим видом на річку',
+        currentIndex: 0,
+      },
+      {
+        id: 3,
+        photos: [
+          '/assets/img/лучшиеварианты/apartament1.jpg',
+          '/assets/img/лучшиеварианты/apartment2.jpg',
+          '/assets/img/лучшиеварианты/apartment3.jpg',
+        ],
+        type: 'Оренда',
+        type2: 'Квартира',
+        price: '500$',
+        rooms: 4,
+        bathroom: 2,
+        area: '55м²',
+        location: 'Дніпро',
+        description: 'Квартира у центрі Дніпра з мальовничим видом на річку',
+        currentIndex: 0,
+      },
+      {
+        id: 4,
+        photos: [
+          '/assets/img/лучшиеварианты/apartament1.jpg',
+          '/assets/img/лучшиеварианты/apartment2.jpg',
+          '/assets/img/лучшиеварианты/apartment3.jpg',
+        ],
+        type: 'Оренда',
+        type2: 'Квартира',
+        price: '500$',
+        rooms: 4,
+        bathroom: 2,
+        area: '55м²',
+        location: 'Дніпро',
+        description: 'Квартира у центрі Дніпра з мальовничим видом на річку',
+        currentIndex: 0,
+      },
+      {
+        id: 5,
+        photos: [
+          '/assets/img/лучшиеварианты/apartament1.jpg',
+          '/assets/img/лучшиеварианты/apartment2.jpg',
+          '/assets/img/лучшиеварианты/apartment3.jpg',
+        ],
+        type: 'Оренда',
+        type2: 'Квартира',
+        price: '500$',
+        rooms: 4,
+        bathroom: 2,
+        area: '55м²',
+        location: 'Дніпро',
+        description: 'Квартира у центрі Дніпра з мальовничим видом на річку',
+        currentIndex: 0,
+      },
+      {
+        id: 6,
+        photos: [
+          '/assets/img/лучшиеварианты/apartament1.jpg',
+          '/assets/img/лучшиеварианты/apartment2.jpg',
+          '/assets/img/лучшиеварианты/apartment3.jpg',
+        ],
+        type: 'Оренда',
+        type2: 'Квартира',
+        price: '500$',
+        rooms: 4,
+        bathroom: 2,
+        area: '55м²',
+        location: 'Дніпро',
+        description: 'Квартира у центрі Дніпра з мальовничим видом на річку',
+        currentIndex: 0,
+      },
+      {
+        id: 7,
+        photos: [
+          '/assets/img/лучшиеварианты/apartament1.jpg',
+          '/assets/img/лучшиеварианты/apartment2.jpg',
+          '/assets/img/лучшиеварианты/apartment3.jpg',
+        ],
+        type: 'Оренда',
+        type2: 'Квартира',
+        price: '500$',
+        rooms: 4,
+        bathroom: 2,
+        area: '55м²',
+        location: 'Дніпро',
+        description: 'Квартира у центрі Дніпра з мальовничим видом на річку',
+        currentIndex: 0,
+      },
+      {
+        id: 8,
+        photos: [
+          '/assets/img/лучшиеварианты/apartment2.jpg',
+          '/assets/img/лучшиеварианты/apartament1.jpg',
+          '/assets/img/лучшиеварианты/apartment3.jpg',
+        ],
+        type: 'Оренда',
+        type2: 'Квартира',
+        price: '500$',
+        rooms: 4,
+        bathroom: 2,
+        area: '55м²',
+        location: 'Дніпро',
+        description: 'Квартира у центрі Дніпра з мальовничим видом на річку',
+        currentIndex: 0,
+      },
+    ];
+
+    const data = {
+      currentIndex: {},
+    };
+
+    function createCardElement(data, cardIndex) {
+      const card = document.createElement('div');
+      card.className = 'col-lg-4 col-md-6 wow fadeInUp mb-3';
+      card.setAttribute('data-wow-delay', '0.1s');
+
+      card.innerHTML = `
+      <div class="property-item rounded overflow-hidden">
+        <div class="position-relative overflow-hidden">
+          <div id="carouselExample${cardIndex}" class="carousel slide">
+            <div class="carousel-inner">
+              ${data.photos.map((photo, index) => `
+                <div class="carousel-item ${index === 0 ? 'active' : ''}">
+                  <img src="${photo}" class="d-block w-100" alt="Image ${index + 1}" style="height: 278px; width: 100%;" />
+                </div>
+              `).join('')}
+            </div>
+            <button class="carousel-control-prev btn-carousel" type="button" data-carousel-control="prev" data-carousel-target="${cardIndex}">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next btn-carousel" type="button" data-carousel-control="next" data-carousel-target="${cardIndex}">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            <div class="type rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">${data.type}</div>
+            <div class="bg-white rounded-top text position-absolute start-0 bottom-0 mx-4 pt-1 px-3 fw-semibold">${data.type2}</div>
+          </div>
+        </div>
+        <div class="p-4 pb-0" style="height: 170px;">
+          <h5 class="text mb-3">${data.price}</h5>
+          <a class="d-block h5 mb-2 " href="">${data.description}</a>
+          <p><i class="fa fa-map-marker-alt text me-2"></i>${data.location}</p>
+        </div>
+        <div class="d-flex border-top">
+          <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text me-2"></i>${data.area}</small>
+          <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text me-2"></i>${data.rooms}</small>
+          <small class="flex-fill text-center py-2"><i class="fa fa-bath text me-2"></i>${data.bathroom}</small>
+        </div>
+      </div>
+      `;
+      return card;
+    }
+
+    function loadInitialCards(data, container, batchSize) {
+      for (let i = 0; i < batchSize && i < data.length; i++) {
+        const cardData = data[i];
+        const card = createCardElement(cardData, i);
+        container.appendChild(card);
+        addCarouselEventListenersToCard(card, i); // Передаем карточку и индекс
+      }
+    }
+
+    const loadMoreButton = document.getElementById('loadMoreButton');
+    const batchSize = 6;
+    let cardCounter = 0;
+
+    function loadMoreCards() {
+      const currentCardCount = document.querySelectorAll('.col-lg-4.col-md-6').length;
+      const startIndex = currentCardCount;
+      const endIndex = Math.min(startIndex + batchSize, dataProperty.length);
+
+      for (let i = startIndex; i < endIndex; i++) {
+        const cardData = dataProperty[i];
+        const card = createCardElement(cardData, cardCounter);
+        document.getElementById('app').appendChild(card);
+        addCarouselEventListenersToCard(card, cardCounter); // Передаем карточку и индекс
+        cardCounter++;
+      }
+
+      if (endIndex === dataProperty.length) {
+        loadMoreButton.style.display = 'none';
+      }
+    }
+
+    loadMoreButton.addEventListener('click', loadMoreCards);
+
+    function addCarouselEventListenersToCard(card, cardIndex) {
+      const carousel = card.querySelector(`#carouselExample${cardIndex}`);
+      const carouselInstance = new bootstrap.Carousel(carousel);
+      const carouselControls = card.querySelectorAll('[data-carousel-control]');
+
+      carouselControls.forEach((control) => {
+        control.addEventListener('click', (e) => {
+          e.preventDefault();
+
+          const direction = control.getAttribute('data-carousel-control');
+          if (direction === 'prev') {
+            carouselInstance.prev();
+          } else {
+            carouselInstance.next();
+          }
+        });
+      });
+    }
+
+    window.addEventListener('load', () => {
+  const appContainer = document.getElementById('app');
+  const noResultsMessage = document.getElementById('noResultsMessage');
+
+  // Проверяем количество объектов в массиве данных
+  if (dataProperty.length === 0) {
+    // Если массив пустой, показываем сообщение и скрываем кнопку "Завантажити ще"
+    noResultsMessage.style.display = 'block';
+    appContainer.style.display = 'none';
+    loadMoreButton.style.display = 'none';
+  } else {
+    // Если есть объекты в массиве
+    if (dataProperty.length > batchSize) {
+      // Если количество объектов больше заданного batchSize, то отображаем кнопку "Завантажити ще"
+      loadMoreButton.style.display = 'block';
+    } else {
+      // Иначе скрываем кнопку "Завантажити ще"
+      loadMoreButton.style.display = 'none';
+    }
+
+    // Загружаем начальные карточки и устанавливаем слушатели событий
+    loadInitialCards(dataProperty, appContainer, batchSize);
+
+    for (let i = 0; i < batchSize && i < dataProperty.length; i++) {
+      addCarouselEventListenersToCard(i);
+    }
+  }
+});
+  </script>
+  
+      
+</body>
+</html>

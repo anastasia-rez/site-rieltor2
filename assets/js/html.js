@@ -59,41 +59,45 @@ showSlide(currentIndex);
 
 // search
 document.addEventListener('DOMContentLoaded', () => {
-    const selectedService = document.getElementById('selectedService');
-    const searchButton = document.getElementById('searchButton');
-  
+  const searchButtons = document.querySelectorAll('.btn-search');
+
+  searchButtons.forEach(searchButton => {
     searchButton.addEventListener('click', () => {
+      const selectedService = searchButton.parentElement.previousElementSibling.querySelector('select');
       const selectedValue = selectedService.value;
       let redirectUrl = '';
-  
+
       switch (selectedValue) {
         case 'rentApartments':
-          redirectUrl = '/public/rentApartments.html';
+          redirectUrl = '/rentApartments.html';
           break;
         case 'sellApartments':
-          redirectUrl = '/public/sellApartments.html';
+          redirectUrl = '/sellApartments.html';
           break;
         case 'rentHouses':
-          redirectUrl = '/public/rentHouses.html';
+          redirectUrl = '/rentHouses.html';
           break;
         case 'sellHouses':
-          redirectUrl = '/public/sellHouses.html';
+          redirectUrl = '/sellHouses.html';
           break;
         case 'landPlots':
-          redirectUrl = '/public/landPlots.html';
+          redirectUrl = '/landPlots.html';
           break;
         case 'offices':
-          redirectUrl = '/public/landPlots.html';
+          redirectUrl = '/offices.html';
           break;
         default:
           break;
       }
-  
+
       if (redirectUrl) {
         window.location.href = redirectUrl;
       }
     });
   });
+});
+
+
 // search
 
 

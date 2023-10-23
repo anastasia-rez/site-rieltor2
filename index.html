@@ -88,37 +88,37 @@
         <!-- Header end-->
       <main class="row flex-grow-1 mt-3">
       <!-- Search -->
-        <div class="container-search mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px;">
-          <div class="container">
-            <div class="row g-2">
-              <div class="col-md-10">
-                <div class="row g-2">
-                  <div class="col-md-5">
-                    <select v-model="selectedService" class="form-select m-auto border-0 py-3">
-                      <option value="" selected>Тип послуги</option>
-                      <option value="rentApartments">Оренда квартир</option>
-                      <option value="sellApartments">Купівля квартири</option>
-                      <option value="rentHouses">Оренда будинка</option>
-                      <option value="sellHouses">Купівля будинка</option>
-                      <option value="landPlots">Земельні ділянки</option>
-                      <option value="offices">Офіси</option>
-                    </select>
-                  </div>
-                  <div class="col-md-5">
-                    <select class="form-select m-auto border-0 py-3">
-                      <option selected>Місцезнаходження</option>
-                      <option value="Dnipro">Дніпро</option>
-                      <!-- Добавьте другие опции здесь -->
-                    </select>
-                  </div>
+      <div class="container-search mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px;">
+        <div class="container">
+          <div class="row g-2">
+            <div class="col-md-10">
+              <div class="row g-2">
+                <div class="col-md-5">
+                  <select v-model="selectedService" class="form-select m-auto border-0 py-3">
+                    <option value="" selected>Тип послуги</option>
+                    <option value="rentApartments">Оренда квартир</option>
+                    <option value="sellApartments">Купівля квартири</option>
+                    <option value="rentHouses">Оренда будинка</option>
+                    <option value="sellHouses">Купівля будинка</option>
+                    <option value="landPlots">Земельні ділянки</option>
+                    <option value="offices">Офіси</option>
+                  </select>
+                </div>
+                <div class="col-md-5">
+                  <select class="form-select m-auto border-0 py-3">
+                    <option selected>Місцезнаходження</option>
+                    <option value="Dnipro">Дніпро</option>
+                    <!-- Добавьте другие опции здесь -->
+                  </select>
                 </div>
               </div>
-              <div class="col-md-2 mt-2">
-                <button @click="search" class="btn-search border-0 w-100 py-3">Знайти</button>
-              </div>
+            </div>
+            <div class="col-md-2 mt-2">
+              <button class="btn-search border-0 w-100 py-3">Знайти</button>
             </div>
           </div>
         </div>
+      </div>      
         <!-- Search end-->
         <!-- About -->
         <div id="about" class="container-xxl py-5 ">
@@ -126,7 +126,7 @@
             <div class="row g-5 align-items-center">
               <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                 <div class="about-img position-relative overflow-hidden p-5 pe-0">
-                    <img class="img-fluid w-100" src="/assets/img/about.jpg">
+                    <img class="img-fluid-about w-100" src="/assets/img/about.jpg">
                 </div>
               </div>
               <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
@@ -461,7 +461,7 @@
                       <a href="rentApartments.html" class="cat-item d-block bg-light text-center rounded p-3">
                           <div class="rounded p-4">
                               <div class="icon mb-3">
-                                  <img class="img-fluid" src="/assets/img/icon/free-icon-building-1683841.png" alt="Icon">
+                                  <img class="img-fluid-category" src="/assets/img/icon/free-icon-building-1683841.png" alt="Icon">
                               </div>
                               <h6>Оренда квартири</h6>
                           </div>
@@ -471,7 +471,7 @@
                       <a href="sellApartments.html" class="cat-item d-block bg-light text-center rounded p-3">
                           <div class="rounded p-4">
                               <div class="icon mb-3">
-                                  <img class="img-fluid" src="/assets/img/icon/free-icon-building-188379.png" alt="Icon">
+                                  <img class="img-fluid-category" src="/assets/img/icon/free-icon-building-188379.png" alt="Icon">
                               </div>
                               <h6>Купівля квартири</h6>
                           </div>
@@ -481,7 +481,7 @@
                       <a href="rentHouses.html" class="cat-item d-block bg-light text-center rounded p-3" >
                           <div class="rounded p-4">
                               <div class="icon mb-3">
-                                  <img class="img-fluid" src="/assets/img/icon/free-icon-building-767156.png" alt="Icon">
+                                  <img class="img-fluid-category" src="/assets/img/icon/free-icon-building-767156.png" alt="Icon">
                               </div>
                               <h6>Оренда будинка</h6>
                           </div>
@@ -491,7 +491,7 @@
                       <a href="sellHouses.html" class="cat-item d-block bg-light text-center rounded p-3" >
                           <div class="rounded p-4">
                               <div class="icon mb-3">
-                                  <img class="img-fluid" src="/assets/img/icon/free-icon-buildings-2084040.png" alt="Icon">
+                                  <img class="img-fluid-category" src="/assets/img/icon/free-icon-buildings-2084040.png" alt="Icon">
                               </div>
                               <h6>Купівля будинка</h6>
                           </div>
@@ -501,7 +501,7 @@
                       <a href="landPlots.html" class="cat-item d-block bg-light text-center rounded p-3" >
                           <div class="rounded p-4">
                               <div class="icon mb-3">
-                                  <img class="img-fluid" src="/assets/img/icon/free-icon-bulding-3187308.png" alt="Icon">
+                                  <img class="img-fluid-category" src="/assets/img/icon/free-icon-bulding-3187308.png" alt="Icon">
                               </div>
                               <h6>Земельні ділянки</h6>
                           </div>
@@ -511,7 +511,7 @@
                       <a href="offices.html" class="cat-item d-block bg-light text-center rounded p-3" >
                           <div class="rounded p-4">
                               <div class="icon mb-3">
-                                  <img class="img-fluid" src="/assets/img/icon/free-icon-office-building-2974654.png" alt="Icon">
+                                  <img class="img-fluid-category" src="/assets/img/icon/free-icon-office-building-2974654.png" alt="Icon">
                               </div>
                               <h6>Офіси</h6>
                           </div>
@@ -520,140 +520,273 @@
               </div>
           </div>
         </div>
-      <!-- Категории end-->
-      <!-- Action -->
-      <div id="contact" class="container-xxl py-5">
-        <div class="container">
-            <div class="bg-light rounded p-3">
-                <div class="bg-white rounded p-4" style="border: 1px dashed rgba(0, 185, 142, .3)">
-                    <div class="row g-5 align-items-center">
-                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                            <img class="img-fluid rounded w-100" src="/assets/img/getintouch.png" alt="">
-                        </div>
-                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                            <div class="mb-4 text-center">
-                                <h1 class="mb-3">Зв'яжіться з нашими агентами за консультацією</h1>
-                                <p>Ми з радістю відповимо на всі ваші запитання</p>
-                            </div>
-                            <div class="d-flex justify-content-evenly">
-                                <a href="tel:+380999999999" class="btn-action py-3 px-4"><i class="fa fa-phone-alt me-2"></i>Подзвонити</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Action end-->
-    <!-- Reviews start -->
-    <div  class="container-xxl py-5">
-      <div class="container">
-        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-          <h1 class="mb-3 fw-semibold">Відгуки наших клієнтів</h1>
-          <p>Ми завжди радіємо Вашим відгукам!</p>
-        </div>
-        <!-- начало отзывов -->
-        <div class="testimonial-container">
-          <div class="testimonial-carousel"> 
-            <div id="carouselInner" class="carousel slide">
-              <div class="carousel-inner-reviews col-lg-12 col-sm-6" >
-                <!-- Отзыв 1 -->
-                <div class="carousel-item-reviews first-review">
-                  <div class="d-flex">
-                    <div class="col-md-6">
-                      <div class="testimonial-item-reviews rounded p-3">
-                        <div class="card rounded p-4 bg-light fixed-card-height ">
-                          <p class="flex-grow-1 review-text">Lorem ipsum dolor sit amet consectetur adipiscing elit diam, nam natoque phasellus maximus quis cras nunc habitant vivamus, hendrerit enim condimentum dictumst nisi cubilia tincidunt</p>
-                          <div class="d-flex align-items-center">
-                            <div class="ps-3">
-                              <h6 class="fw-cold mb-1">Имя 1</h6>
-                              <small>Услуга 1</small>
-                            </div>
+        <!-- Категории end-->
+        <!-- Action -->
+        <div id="contact" class="container-xxl py-5">
+          <div class="container">
+              <div class="bg-light rounded p-3">
+                  <div class="bg-white rounded p-4" style="border: 1px dashed rgba(0, 185, 142, .3)">
+                      <div class="row g-5 align-items-center">
+                          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                              <img class="img-fluid-action rounded w-100" src="/assets/img/getintouch.png" alt="">
                           </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Отзыв 2 -->
-                <div class="carousel-item-reviews">
-                  <div class="d-flex">
-                    <div class="col-md-6">
-                      <div class="testimonial-item-reviews rounded p-3 ">
-                        <div class="card rounded p-4 bg-light fixed-card-height">
-                          <p class="flex-grow-1 review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut libero vel urna tincidunt condimentum. Donec vestibulum nisi sit amet est malesuada, in cursus tellus cursus. Sed ac mi nec lorem tempus laoreet.</p>
-                          <div class="d-flex align-items-center">
-                            <div class="ps-3">
-                              <h6 class="fw-cold mb-1">Имя 2</h6>
-                              <small>Услуга 2</small>
-                            </div>
+                          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                              <div class="mb-4 text-center">
+                                  <h1 class="mb-3">Зв'яжіться з нашими агентами за консультацією</h1>
+                                  <p>Ми з радістю відповимо на всі ваші запитання</p>
+                              </div>
+                              <div class="d-flex justify-content-evenly">
+                                  <a href="tel:+380999999999" class="btn-action py-3 px-4"><i class="fa fa-phone-alt me-2"></i>Подзвонити</a>
+                              </div>
                           </div>
-                        </div>
                       </div>
-                    </div>
                   </div>
-                </div>
-                <!-- Отзыв 3 -->
-                <div class="carousel-item-reviews">
-                  <div class="d-flex">
-                    <div class="col-md-6">
-                      <div class="testimonial-item-reviews rounded p-3 ">
-                        <div class="card rounded p-4 bg-light fixed-card-height">
-                          <p class="flex-grow-1 review-text">Lorem ipsum dolor sit amet consectetur adipiscing elit facilisi habitasse, fames ex ut penatibus eu aenean est quisque, urna id velit malesuada tristique primis nam magna. Lorem ipsum dolor sit amet consectetur adipiscing elit diam, nam natoque phasellus maximus quis cras nun</p>
-                          <div class="d-flex align-items-center">
-                            <div class="ps-3">
-                              <h6 class="fw-cold mb-1">Имя 3</h6>
-                              <small>Услуга 3</small>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Отзыв 4 -->
-                <div class="carousel-item-reviews">
-                  <div class="d-flex">
-                    <div class="col-md-6">
-                      <div class="testimonial-item-reviews rounded p-3">
-                        <div class="card rounded p-4 bg-light fixed-card-height">
-                          <p class="flex-grow-1 review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut libero vel urna tincidunt condimentum. Donec vestibulum nisi sit amet est malesuada, in cursus tellus cursus. Sed ac mi nec lorem tempus laoreet.</p>
-                          <div class="d-flex align-items-center">
-                            <div class="ps-3">
-                              <h6 class="fw-cold mb-1">Имя 4</h6>
-                              <small>Услуга 4</small>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            </div>
-            <button class="carousel-control-prev custom-btn" type="button" data-bs-target="#carouselInner" data-bs-slide="prev" id="customPrevButton">
-              <span class="carousel-control-prev-icon"></span>
-          </button>
-          <button class="carousel-control-next custom-btn" type="button" data-bs-target="#carouselInner" data-bs-slide="next" id="customNextButton">
-              <span class="carousel-control-next-icon"></span>
-          </button>
+              </div>
           </div>
         </div>
-        <!-- конец отзывов -->
-      </div>
-    </div>
-    <!-- Reviews end -->
-
+        <!-- Action end-->
+        <!-- Reviews start -->
+        <div  class="container-xxl py-5">
+        <div class="container">
+          <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h1 class="mb-3 fw-semibold">Відгуки наших клієнтів</h1>
+            <p>Ми завжди радіємо Вашим відгукам!</p>
+          </div>
+          <!-- начало отзывов -->
+          <div class="testimonial-container">
+            <div class="testimonial-carousel"> 
+              <div id="carouselInner" class="carousel slide">
+                <div class="carousel-inner-reviews col-lg-12 col-sm-6" >
+                  <!-- Отзыв 1 -->
+                  <div class="carousel-item-reviews first-review">
+                    <div class="d-flex">
+                      <div class="col-md-6">
+                        <div class="testimonial-item-reviews rounded p-3">
+                          <div class="card rounded p-4 bg-light fixed-card-height ">
+                            <p class="flex-grow-1 review-text">Lorem ipsum dolor sit amet consectetur adipiscing elit diam, nam natoque phasellus maximus quis cras nunc habitant vivamus, hendrerit enim condimentum dictumst nisi cubilia tincidunt</p>
+                            <div class="d-flex align-items-center">
+                              <div class="ps-3">
+                                <h6 class="fw-cold mb-1">Имя 1</h6>
+                                <small>Услуга 1</small>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Отзыв 2 -->
+                  <div class="carousel-item-reviews">
+                    <div class="d-flex">
+                      <div class="col-md-6">
+                        <div class="testimonial-item-reviews rounded p-3 ">
+                          <div class="card rounded p-4 bg-light fixed-card-height">
+                            <p class="flex-grow-1 review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut libero vel urna tincidunt condimentum. Donec vestibulum nisi sit amet est malesuada, in cursus tellus cursus. Sed ac mi nec lorem tempus laoreet.</p>
+                            <div class="d-flex align-items-center">
+                              <div class="ps-3">
+                                <h6 class="fw-cold mb-1">Имя 2</h6>
+                                <small>Услуга 2</small>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Отзыв 3 -->
+                  <div class="carousel-item-reviews">
+                    <div class="d-flex">
+                      <div class="col-md-6">
+                        <div class="testimonial-item-reviews rounded p-3 ">
+                          <div class="card rounded p-4 bg-light fixed-card-height">
+                            <p class="flex-grow-1 review-text">Lorem ipsum dolor sit amet consectetur adipiscing elit facilisi habitasse, fames ex ut penatibus eu aenean est quisque, urna id velit malesuada tristique primis nam magna. Lorem ipsum dolor sit amet consectetur adipiscing elit diam, nam natoque phasellus maximus quis cras nun</p>
+                            <div class="d-flex align-items-center">
+                              <div class="ps-3">
+                                <h6 class="fw-cold mb-1">Имя 3</h6>
+                                <small>Услуга 3</small>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Отзыв 4 -->
+                  <div class="carousel-item-reviews">
+                    <div class="d-flex">
+                      <div class="col-md-6">
+                        <div class="testimonial-item-reviews rounded p-3">
+                          <div class="card rounded p-4 bg-light fixed-card-height">
+                            <p class="flex-grow-1 review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut libero vel urna tincidunt condimentum. Donec vestibulum nisi sit amet est malesuada, in cursus tellus cursus. Sed ac mi nec lorem tempus laoreet.</p>
+                            <div class="d-flex align-items-center">
+                              <div class="ps-3">
+                                <h6 class="fw-cold mb-1">Имя 4</h6>
+                                <small>Услуга 4</small>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              </div>
+              <button class="carousel-control-prev custom-btn" type="button" data-bs-target="#carouselInner" data-bs-slide="prev" id="customPrevButton">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next custom-btn" type="button" data-bs-target="#carouselInner" data-bs-slide="next" id="customNextButton">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            </div>
+          </div>
+          <!-- конец отзывов -->
+        </div>
+        </div>
+        <!-- Reviews end -->
+        <!-- Team Start -->
+        <div class="container-xxl py-5">
+          <div class="container" id="team">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h1 class="mb-3 fw-semibold">Наші фахівці</h1>
+                <p>Наша команда складається з фахівців найвищчого рівня</p>
+            </div>
+            <div class="row g-4">
+              <!-- сотрудник 1 -->
+              <div class="team-item col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="rounded overflow-hidden ">
+                  <div class="position-relative ">
+                    <img class="img-fluid-team w-100" src="/assets/img/сотрудники/team-1.jpg" alt="">
+                    <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                      <a class="btn btn-square mx-1" href="https://www.facebook.com/profile.php?id=100010567900961"><i class="fab fa-facebook-f"></i></a>
+                      <a class="btn btn-square mx-1" href="https://www.youtube.com/watch?v=TpXFxjzWnuw"><i class="fab fa-youtube"></i></a>
+                      <a class="btn btn-square mx-1" href="https://www.instagram.com/ana_anastasia17/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                  </div>
+                  <div class="text-center p-4 mt-3">
+                    <h5 class="fw-bold mb-0">Имя</h5>
+                    <small>Посада</small>
+                    <div>
+                      <a href="tel:+380999999999" class="text-dark link-underline link-underline-opacity-0">+380671234355 <i class="fa fa-phone-alt p-3 "></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- сотрудник 2 -->
+              <div class="team-item col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="rounded overflow-hidden ">
+                  <div class="position-relative ">
+                    <img class="img-fluid-team w-100" src="/assets/img/сотрудники/team-2.jpg" alt="">
+                    <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                      <a class="btn btn-square mx-1" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                      <a class="btn btn-square mx-1" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                      <a class="btn btn-square mx-1" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                  </div>
+                  <div class="text-center p-4 mt-3">
+                    <h5 class="fw-bold mb-0">Имя</h5>
+                    <small>Посада</small>
+                    <div>
+                      <a href="tel:+380999999999" class="text-dark link-underline link-underline-opacity-0">+380671234355 <i class="fa fa-phone-alt p-3 "></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- сотрудник 3 -->
+              <div class="team-item col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="rounded overflow-hidden ">
+                  <div class="position-relative ">
+                    <img class="img-fluid-team w-100" src="/assets/img/сотрудники/team-3.jpg" alt="">
+                    <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                      <a class="btn btn-square mx-1" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                      <a class="btn btn-square mx-1" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                      <a class="btn btn-square mx-1" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                  </div>
+                  <div class="text-center p-4 mt-3">
+                    <h5 class="fw-bold mb-0">Имя</h5>
+                    <small>Посада</small>
+                    <div>
+                      <a href="tel:+380999999999" class="text-dark link-underline link-underline-opacity-0">+380671234355 <i class="fa fa-phone-alt p-3 "></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- сотрудник 4 -->
+              <div class="team-item col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="rounded overflow-hidden ">
+                  <div class="position-relative ">
+                    <img class="img-fluid-team w-100" src="/assets/img/сотрудники/team-4.jpg" alt="">
+                    <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                      <a class="btn btn-square mx-1" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                      <a class="btn btn-square mx-1" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                      <a class="btn btn-square mx-1" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                  </div>
+                  <div class="text-center p-4 mt-3">
+                    <h5 class="fw-bold mb-0">Имя</h5>
+                    <small>Посада</small>
+                    <div>
+                      <a href="tel:+380999999999" class="text-dark link-underline link-underline-opacity-0">+380671234355 <i class="fa fa-phone-alt p-3 "></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <!-- Team End -->
       </main>
 
-
-
-
-
-
-
-
-
+      <footer class="text-center py-3">
+        <div  class="container-fluid text-white-50 footer pt-3 mt-5 wow fadeIn" data-wow-delay="0.1s">
+          <div class="container py-5">
+            <div class="row g-5">
+              <div class="col-lg-3 col-md-6">
+                <h5 class="text-white mb-4">Про нас</h5>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Дніпро, Україна</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+380 66 000 00 00</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>alianceexpert1@gmail.com</p>
+                <div class="d-flex pt-3 justify-content-evenly">
+                  <a class="btn btn-outline-light btn-social" href="https://instagram.com/aliansekspert?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr "><i class="fab fa-instagram"></i></a>
+                  <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                  <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                  <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <h5 class="text-white mb-4">Швидкі посилання</h5>
+                <a class="btn btn-link text-white-50" href="#about">Про нас</a>
+                <a class="btn btn-link text-white-50" href="#property">Наші найкращі варіанти</a>
+                <a class="btn btn-link text-white-50" href="#contact">Контакти</a>
+                <a class="btn btn-link text-white-50" href="#team">Наші фахівці</a>
+              </div>
+              <div class="col-lg-5 col-md-6">
+                <h5 class="text-white mb-4">Галерея</h5>
+                <div class="row g-2 pt-2">
+                  <div class="col-4">
+                    <img class="img-fluid rounded bg-light p-1 " src="/assets/img/лучшиеварианты/apartament1.jpg" alt="">
+                  </div>
+                  <div class="col-4">
+                    <img class="img-fluid rounded bg-light p-1" src="/assets/img/лучшиеварианты/apartment2.jpg" alt="">
+                  </div>
+                  <div class="col-4">
+                    <img class="img-fluid rounded bg-light p-1" src="/assets/img/лучшиеварианты/apartment3.jpg" alt="">
+                  </div>
+                  <div class="col-4">
+                    <img class="img-fluid rounded bg-light p-1" src="/assets/img/лучшиеварианты/apartment4.jpg" alt="">
+                  </div>
+                  <div class="col-4">
+                    <img class="img-fluid rounded bg-light p-1" src="/assets/img/carousel-1.gif" alt="">
+                  </div>
+                  <div class="col-4">
+                    <img class="img-fluid rounded bg-light p-1" src="/assets/img/carousel-2.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   </div>
 
